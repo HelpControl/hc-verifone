@@ -6,11 +6,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { AuthVerifonePage } from './auth-verifone.page';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
     path: '',
     component: AuthVerifonePage
+  },
+  {
+    path: 'login'
   }
 ];
 
@@ -21,6 +25,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [AuthVerifonePage]
+  declarations: [AuthVerifonePage, LoginComponent]
 })
 export class AuthVerifonePageModule {}
