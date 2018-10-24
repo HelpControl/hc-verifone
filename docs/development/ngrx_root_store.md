@@ -13,3 +13,6 @@ $ng g interface root-store/root-state
 ```
 
 В сгенерированном интерфейсе изменяем имя с `RootState` на `State`
+
+## Создаем  Actions
+

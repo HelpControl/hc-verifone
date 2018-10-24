@@ -75,3 +75,15 @@ export const InitionalState: State = {
   error: null
 };
 ```
+
+Создаем файл для кода reducer
+
+```bash
+$ng g class _root-store/auth-store/reducer
+```
+
+Заменяем содержимое 
+
+```javascript
+
+```
