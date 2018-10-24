@@ -14,9 +14,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './reducers';
-import { RootStoreModule } from './root-store/root-store.module';
+// import { StoreModule } from '@ngrx/store';
+// import { reducers, metaReducers } from './reducers';
+import { RootStoreModule } from './_root-store/root-store.module';
 
 // NOTE: Переопределение загрузчика файлов с i18n
 export function createTranslateLoader(http: HttpClient) {
@@ -42,7 +42,7 @@ export function createTranslateLoader(http: HttpClient) {
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
     }),
-    StoreModule.forRoot(reducers, { metaReducers }),
+    // StoreModule.forRoot(reducers, { metaReducers }),
     RootStoreModule
   ],
   providers: [
